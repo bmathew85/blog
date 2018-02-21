@@ -1494,3 +1494,228 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-21 12:30:06 -0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 238ms (Views: 224.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:31:51 -0800
+
+SyntaxError (/Users/jnapolitan/Development/blog/app/controllers/posts_controller.rb:50: syntax error, unexpected ':', expecting keyword_end
+    notice: 'Post was successfully destro
+           ^):
+
+app/controllers/posts_controller.rb:50: syntax error, unexpected ':', expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-02-21 12:32:34 -0800
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-21 12:32:36 -0800
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-02-21 12:32:36 -0800
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-21 12:32:37 -0800
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:32:39 -0800
+
+SyntaxError (/Users/jnapolitan/Development/blog/app/controllers/posts_controller.rb:50: syntax error, unexpected ':', expecting keyword_end
+    notice: 'Post was successfully destro
+           ^):
+
+app/controllers/posts_controller.rb:50: syntax error, unexpected ':', expecting keyword_end
+Started GET "/posts/1" for 127.0.0.1 at 2018-02-21 12:32:40 -0800
+
+SyntaxError (/Users/jnapolitan/Development/blog/app/controllers/posts_controller.rb:50: syntax error, unexpected ':', expecting keyword_end
+    notice: 'Post was successfully destro
+           ^):
+
+app/controllers/posts_controller.rb:50: syntax error, unexpected ':', expecting keyword_end
+Started GET "/posts/1" for 127.0.0.1 at 2018-02-21 12:32:59 -0800
+Processing by PostsController#show as HTML
+Started GET "/posts/" for 127.0.0.1 at 2018-02-21 12:33:09 -0800
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 26.7ms | ActiveRecord: 2.0ms)
+
+
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 30ms (Views: 24.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2018-02-21 12:37:37 -0800
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 122ms
+
+
+
+NameError (undefined local variable or method `monkey' for #<PostsController:0x00007fe779c00680>):
+
+app/controllers/posts_controller.rb:7:in `index'
+Started GET "/posts/" for 127.0.0.1 at 2018-02-21 12:38:03 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 50ms (Views: 43.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2018-02-21 12:38:34 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-02-21 12:41:33 -0800
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-21 12:41:36 -0800
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-21 12:42:26 -0800
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:42:31 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:42:41 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:42:52 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/posts/7" for 127.0.0.1 at 2018-02-21 12:45:14 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qxKeSsPCGPiDQUxYLktak/YEsvkiN0hwD6HKQ4De2uOT1e+sZdUf0wQWjxLKGlqBj4bb1m3UXOBD15oIOpQjGg==", "id"=>"7"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#destroy, rendering head :no_content
+Completed 204 No Content in 112ms (ActiveRecord: 3.0ms)
+
+
+Started DELETE "/posts/6" for 127.0.0.1 at 2018-02-21 12:45:17 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qxKeSsPCGPiDQUxYLktak/YEsvkiN0hwD6HKQ4De2uOT1e+sZdUf0wQWjxLKGlqBj4bb1m3UXOBD15oIOpQjGg==", "id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#destroy, rendering head :no_content
+Completed 204 No Content in 120ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:45:19 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:50:04 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-02-21 12:50:11 -0800
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (37.3ms)
+  Rendered posts/new.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 71ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-02-21 12:50:51 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdRZFMyeYPU1Cqgn+/bdFM0Afxb/lCWfFrMeRcyhtMNAjsFTPWf5luM26EefEbZBtxuYla+jFrErHFb1JLlKcw==", "post"=>{"title"=>"Test long post", "body"=>"Tax time is nigh. So we’ve asked our friends at TaxJar to share tips to get you through it. Today, TaxJar Chief of Content Jennifer Dunn focuses on an important topic: the most common tax mistakes for small-business owners. Read on, so you don’t make ’em. (Remember, this post is for educational purposes only. For tax advice related to your specific business, be sure to consult a reputable accountant.)\r\n\r\n\r\n\r\nWorking with small businesses, and as a small-business owner myself, I’ve seen my share of tax mistakes. In fact, I’ve made my share of mistakes.\r\n\r\nWhen I first started out, I had no idea that quarterly estimated taxes were even a thing. And then I somehow thought that I would get some kind of tax break for starting my own business. How young and naïve I was.\r\n\r\nSo as Tax Day 2018 approaches, I hope you can learn from some of the mistakes I’ve made, as well as some of the others I’ve seen while working with TaxJar. Here are the biggies to avoid:\r\n\r\nNot treating your business like a business\r\nA lot of business owners turn a hobby into a business. One minute you’re just baking your grandma’s lemon bar recipe for a few friends, and the next you’re the hit of the local farmers market. It can be a shock to realize that what was once a fun hobby is now a money-making venture. But it will be a bigger shock if the IRS realizes that first and comes after you.\r\n\r\nThe number one tax mistake new business owners make is not realizing they even have a business. If you made over $400 in self-employed income in a taxable year, then you may be required to file Schedule C (Profit or Loss from Business) and Schedule SE (Self-Employment Tax) along with your regular 1040 income tax form.\r\n\r\nStill not sure if you have a business or a hobby? Here’s what the IRS has to say about businesses and hobbies. The key takeaway is that a business owner is allowed to take business-related tax deductions, while people who merely practice a hobby can’t.\r\n\r\nNot paying quarterly estimated taxes\r\nThe U.S. has a pay-as-you-go tax system. That’s why, when you have a W-2 job, your employer takes taxes out of your paycheck every week. When you’re self-employed, there’s no employer to take care of your periodic tax obligation. It’s all on you to pay as you go.\r\n\r\nThe IRS (and most states with an income tax) require small-business owners to remit quarterly payments in order to fulfill their tax obligations.\r\n\r\nQuarterly payments can actually be quite handy as your business becomes profitable. They allow you to catch up on your tax obligation as the year progresses, rather than get hit with a huge tax bill at the end of the year.\r\n\r\nLeaving money on the table\r\nMany of the expenses you incur in the course of running your business are tax deductible. It’s pretty easy to handle most tax deductions. You buy something — some office supplies or a banner ad on a targeted website — keep the receipt, and then deduct it at the end of the year.\r\n\r\nBut two of the most lucrative deductions are more complicated than that. The home office deduction, which allows you to deduct expenses related to the portion of your home that you use for business, requires a lot of calculations. And the automobile expenses deduction takes some very dedicated recordkeeping throughout the year.\r\n\r\nNevertheless, don’t ignore these two deductions. They can mean big tax savings at the end of the year. If in doubt, contact a reputable accountant to help you make sense of it all.\r\n\r\nTreating employees like contractors\r\nAs your business grows, you may find it’s time to bring on some help. Hiring an employee involves remitting payroll taxes and HR paperwork. On the other hand, hiring a contractor — who takes care of her own taxes — is fairly simple. But just because hiring a contractor is easier doesn’t mean it’s always the right choice.\r\n\r\nThe IRS considers an employee to be someone whose time and location are controlled by you. So if you require your worker to come into the office or work a set amount of hours, you may have an employee and not a contractor. Employees are treated differently than contractors when it comes to taxes. Read what the IRS has to say about employees vs. contractors to ensure you aren’t breaking the law.\r\n\r\nFiling late (when you don’t have to)\r\nDid April 15 (or March 15 for corporations) sneak up on you? You just couldn’t get your paperwork together and now you’re looking at fines and penalties on top of a late tax return? It doesn’t have to be like this. The IRS understands that taxes are difficult, and that’s why they’ll grant a six-month tax extension in almost all cases. All you have to do is ask. Really! Just file Form 4868 for an extension on your individual tax return or Form 7004 for an extension on your corporate tax return.\r\n\r\nBut keep in mind that the extension only grants you extra time to file, not extra time to pay. You should estimate how much you owe Uncle Sam and still pay that by your tax due date. Unless you perfectly estimated how much you owe in taxes, you’ll either find yourself with a refund or a bill once you file by October 15 (September 15 for corporations).\r\n\r\nNot dealing with sales tax\r\nIf you sell products and live in one of the 45 states (plus D.C.) that has a sales tax, then you are most likely on the hook to charge sales tax to your buyers. Sales tax can be complicated, so many sellers either get it wrong or try to ignore it altogether. Both strategies can have dire consequences. If you sell products, get to know sales tax. You can start with this Sales Tax 101 Guide from TaxJar. And if you’re a mobile business, be sure to use TaxJar and Square’s tool for making sales tax easy on the go.\r\n\r\nFailing to consult help\r\nHiring an accountant can seem like an unbearable business expense, especially when you’re just starting out. But a good accountant gives you peace of mind that you’re doing everything right. He or she often also saves you money by finding deductions or tax credits that you may have never thought of. It’s almost always a good idea to get professional help when it comes to your business taxes. (Read up on tips for how to hire a great accountant).\r\n\r\nDid you just read this and get the sinking feeling that you made some tax mistakes in previous years? Well, there’s also some good news — you can actually go back and correct old tax returns up to three years later. Just use Form 1040X to amend each return, or contact a reputable accountant if you have questions.\r\n\r\n- Jennifer Dunn (TaxJar)"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Test long post"], ["body", "Tax time is nigh. So we’ve asked our friends at TaxJar to share tips to get you through it. Today, TaxJar Chief of Content Jennifer Dunn focuses on an important topic: the most common tax mistakes for small-business owners. Read on, so you don’t make ’em. (Remember, this post is for educational purposes only. For tax advice related to your specific business, be sure to consult a reputable accountant.)\r\n\r\n\r\n\r\nWorking with small businesses, and as a small-business owner myself, I’ve seen my share of tax mistakes. In fact, I’ve made my share of mistakes.\r\n\r\nWhen I first started out, I had no idea that quarterly estimated taxes were even a thing. And then I somehow thought that I would get some kind of tax break for starting my own business. How young and naïve I was.\r\n\r\nSo as Tax Day 2018 approaches, I hope you can learn from some of the mistakes I’ve made, as well as some of the others I’ve seen while working with TaxJar. Here are the biggies to avoid:\r\n\r\nNot treating your business like a business\r\nA lot of business owners turn a hobby into a business. One minute you’re just baking your grandma’s lemon bar recipe for a few friends, and the next you’re the hit of the local farmers market. It can be a shock to realize that what was once a fun hobby is now a money-making venture. But it will be a bigger shock if the IRS realizes that first and comes after you.\r\n\r\nThe number one tax mistake new business owners make is not realizing they even have a business. If you made over $400 in self-employed income in a taxable year, then you may be required to file Schedule C (Profit or Loss from Business) and Schedule SE (Self-Employment Tax) along with your regular 1040 income tax form.\r\n\r\nStill not sure if you have a business or a hobby? Here’s what the IRS has to say about businesses and hobbies. The key takeaway is that a business owner is allowed to take business-related tax deductions, while people who merely practice a hobby can’t.\r\n\r\nNot paying quarterly estimated taxes\r\nThe U.S. has a pay-as-you-go tax system. That’s why, when you have a W-2 job, your employer takes taxes out of your paycheck every week. When you’re self-employed, there’s no employer to take care of your periodic tax obligation. It’s all on you to pay as you go.\r\n\r\nThe IRS (and most states with an income tax) require small-business owners to remit quarterly payments in order to fulfill their tax obligations.\r\n\r\nQuarterly payments can actually be quite handy as your business becomes profitable. They allow you to catch up on your tax obligation as the year progresses, rather than get hit with a huge tax bill at the end of the year.\r\n\r\nLeaving money on the table\r\nMany of the expenses you incur in the course of running your business are tax deductible. It’s pretty easy to handle most tax deductions. You buy something — some office supplies or a banner ad on a targeted website — keep the receipt, and then deduct it at the end of the year.\r\n\r\nBut two of the most lucrative deductions are more complicated than that. The home office deduction, which allows you to deduct expenses related to the portion of your home that you use for business, requires a lot of calculations. And the automobile expenses deduction takes some very dedicated recordkeeping throughout the year.\r\n\r\nNevertheless, don’t ignore these two deductions. They can mean big tax savings at the end of the year. If in doubt, contact a reputable accountant to help you make sense of it all.\r\n\r\nTreating employees like contractors\r\nAs your business grows, you may find it’s time to bring on some help. Hiring an employee involves remitting payroll taxes and HR paperwork. On the other hand, hiring a contractor — who takes care of her own taxes — is fairly simple. But just because hiring a contractor is easier doesn’t mean it’s always the right choice.\r\n\r\nThe IRS considers an employee to be someone whose time and location are controlled by you. So if you require your worker to come into the office or work a set amount of hours, you may have an employee and not a contractor. Employees are treated differently than contractors when it comes to taxes. Read what the IRS has to say about employees vs. contractors to ensure you aren’t breaking the law.\r\n\r\nFiling late (when you don’t have to)\r\nDid April 15 (or March 15 for corporations) sneak up on you? You just couldn’t get your paperwork together and now you’re looking at fines and penalties on top of a late tax return? It doesn’t have to be like this. The IRS understands that taxes are difficult, and that’s why they’ll grant a six-month tax extension in almost all cases. All you have to do is ask. Really! Just file Form 4868 for an extension on your individual tax return or Form 7004 for an extension on your corporate tax return.\r\n\r\nBut keep in mind that the extension only grants you extra time to file, not extra time to pay. You should estimate how much you owe Uncle Sam and still pay that by your tax due date. Unless you perfectly estimated how much you owe in taxes, you’ll either find yourself with a refund or a bill once you file by October 15 (September 15 for corporations).\r\n\r\nNot dealing with sales tax\r\nIf you sell products and live in one of the 45 states (plus D.C.) that has a sales tax, then you are most likely on the hook to charge sales tax to your buyers. Sales tax can be complicated, so many sellers either get it wrong or try to ignore it altogether. Both strategies can have dire consequences. If you sell products, get to know sales tax. You can start with this Sales Tax 101 Guide from TaxJar. And if you’re a mobile business, be sure to use TaxJar and Square’s tool for making sales tax easy on the go.\r\n\r\nFailing to consult help\r\nHiring an accountant can seem like an unbearable business expense, especially when you’re just starting out. But a good accountant gives you peace of mind that you’re doing everything right. He or she often also saves you money by finding deductions or tax credits that you may have never thought of. It’s almost always a good idea to get professional help when it comes to your business taxes. (Read up on tips for how to hire a great accountant).\r\n\r\nDid you just read this and get the sinking feeling that you made some tax mistakes in previous years? Well, there’s also some good news — you can actually go back and correct old tax returns up to three years later. Just use Form 1040X to amend each return, or contact a reputable accountant if you have questions.\r\n\r\n- Jennifer Dunn (TaxJar)"], ["created_at", "2018-02-21 20:50:51.707322"], ["updated_at", "2018-02-21 20:50:51.707322"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2018-02-21 12:50:51 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:50:55 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-02-21 12:52:38 -0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+

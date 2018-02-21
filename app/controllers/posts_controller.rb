@@ -47,7 +47,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-    notice: 'Post was successfully destroyed.'
+
   end
 
   private
