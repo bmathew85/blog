@@ -14,13 +14,16 @@
   		<div class="mt-4 border-bottom">
 	  		<ul class="nav nav-pills float-right">
 	  			<li class="nav-item">
-		  			<%= link_to "Home", '/', class: 'nav-link' %>
+		  			<%= link_to "Home", root_url, class: 'nav-link' %>
 		  		</li>
 		  		<li class="nav-item">
-		  			<%= link_to "About", '/about', class: 'nav-link' %>
+		  			<%= link_to "Posts", posts_url, class: 'nav-link' %>
+		  		</li>
+		  		<li class="nav-item">
+		  			<%= link_to "About", about_url, class: 'nav-link' %>
 		  		</li>
 			</ul>
-			<h1><%= link_to "myblog", "/" %> <small class="text-muted">// daily self-deprecation</small></h1>
+			<h1><%= link_to "myblog", root_url %> <small class="text-muted">// daily self-deprecation</small></h1>
 		</div>
 		<div class="col-md-8 offset-md-2 mt-4">
 	    	<%= yield %>
