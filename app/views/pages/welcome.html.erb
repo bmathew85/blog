@@ -1,6 +1,5 @@
 <% @posts.each do |post| %>
 
-	<h2><%= post.title %></h2>
+ <%= render 'posts/post', post: post %>
 
-	<p><%= simple_format(truncate(post.body, length: 500)) %></p>
 <% end %>
