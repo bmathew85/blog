@@ -36,6 +36,9 @@ gem 'ckeditor'
 # Use paperclip for file uploads
 gem 'paperclip'
 
+# Use Devise for authentication
+gem 'devise'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

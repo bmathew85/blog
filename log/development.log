@@ -3266,3 +3266,233 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/new" for 127.0.0.1 at 2018-04-04 15:58:07 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (29.8ms)
+  Rendered posts/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 926ms (Views: 908.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ckeditor/pictures?CKEditor=post_body&CKEditorFuncNum=1&langCode=en" for 127.0.0.1 at 2018-04-04 16:00:39 -0400
+Processing by Ckeditor::PicturesController#index as HTML
+  Parameters: {"CKEditor"=>"post_body", "CKEditorFuncNum"=>"1", "langCode"=>"en"}
+  Rendering /Users/jnapolitan/.rvm/gems/ruby-2.4.3/gems/ckeditor-4.2.4/app/views/ckeditor/pictures/index.html.erb within layouts/ckeditor/application
+  [1m[36mCkeditor::Picture Load (0.5ms)[0m  [1m[34mSELECT  "ckeditor_assets".* FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::Picture') ORDER BY id desc LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  Rendered collection of /Users/jnapolitan/.rvm/gems/ruby-2.4.3/gems/ckeditor-4.2.4/app/views/ckeditor/shared/_asset.html.erb [0 times] (0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "ckeditor_assets" WHERE "ckeditor_assets"."type" IN ('Ckeditor::Picture')[0m
+  Rendered /Users/jnapolitan/.rvm/gems/ruby-2.4.3/gems/ckeditor-4.2.4/app/views/ckeditor/pictures/index.html.erb within layouts/ckeditor/application (50.7ms)
+  Rendered /Users/jnapolitan/.rvm/gems/ruby-2.4.3/gems/ckeditor-4.2.4/app/views/ckeditor/shared/_asset_tmpl.html.erb (1.1ms)
+Completed 200 OK in 1217ms (Views: 1182.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/ckeditor/pictures?qqfile=global-searchglobal-search.png" for 127.0.0.1 at 2018-04-04 16:00:52 -0400
+Processing by Ckeditor::PicturesController#create as */*
+  Parameters: {"qqfile"=>"global-searchglobal-search.png"}
+[paperclip] Trying to link /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/9679b251e7dc538adddd4da8f79646233387e28e20180404-29647-19y57xh to /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png
+[paperclip] Trying to link /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png to /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-rjeq1z.png
+Command :: file -b --mime '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-rjeq1z.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png[0]'
+Command :: convert '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png[0]' -auto-orient -resize "800>" '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/42b7cdc41b3889ce719dc9657567c42e20180404-29647-swh5ig'
+[paperclip] Trying to link /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/42b7cdc41b3889ce719dc9657567c42e20180404-29647-swh5ig to /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/96a2d459f19efcc86f9f778de4a8cca120180404-29647-q3uhac
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png[0]'
+Command :: convert '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png[0]' -auto-orient -resize "x100" -crop "118x100+16+0" +repage '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/42b7cdc41b3889ce719dc9657567c42e20180404-29647-6eujg4'
+[paperclip] Trying to link /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/42b7cdc41b3889ce719dc9657567c42e20180404-29647-6eujg4 to /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/97eba2a343b68b735dbd6eefe3b26c2320180404-29647-v63jqb
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[paperclip] Trying to link /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png to /var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-86e46m.png
+Command :: file -b --mime '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-86e46m.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/wl/78hvcv2j5ng13dzc9cskv72m0004b6/T/468ae32b979a0da4a814b97b21a116c820180404-29647-1gr9nw5.png[0]' 2>/dev/null
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "ckeditor_assets" ("data_file_name", "data_content_type", "data_file_size", "data_fingerprint", "type", "width", "height", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["data_file_name", "global-searchglobal-search.png"], ["data_content_type", "image/png"], ["data_file_size", 308572], ["data_fingerprint", "11403c4ce439ba81f759e06dfbde50c2"], ["type", "Ckeditor::Picture"], ["width", 1553], ["height", 1027], ["created_at", "2018-04-04 20:00:53.669386"], ["updated_at", "2018-04-04 20:00:53.669386"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 1047ms (Views: 0.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-04-11 12:14:00 -0700
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (447.8ms)
+  Rendered posts/new.html.erb within layouts/application (468.8ms)
+Completed 200 OK in 895ms (Views: 623.1ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 12:14:03 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (5.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (85.5ms)
+Completed 200 OK in 195ms (Views: 177.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-04-11 12:14:09 -0700
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (4.6ms)
+  Rendered posts/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 132ms (Views: 129.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-04-11 12:15:15 -0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sQDGs4ktJWrgmQ+vGSX75rQ097gWwfgQLkFwJFHT0w3xUkmWLnl2R6PRlp4tHCs3G5OzsRKkotzyASKw/EMyJw==", "post"=>{"title"=>"sweet new pics", "body"=>"<p>hell yeah styling and picks&nbsp;</p>\r\n\r\n<h1><span style=\"font-family:Comic Sans MS,cursive;\">I LOVE COMIC SANS</span></h1>\r\n\r\n<p><span style=\"font-family:Comic Sans MS,cursive;\"><img alt=\"\" src=\"http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg\" /></span></p>\r\n"}, "commit"=>"Publish"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sweet new pics"], ["body", "<p>hell yeah styling and picks&nbsp;</p>\r\n\r\n<h1><span style=\"font-family:Comic Sans MS,cursive;\">I LOVE COMIC SANS</span></h1>\r\n\r\n<p><span style=\"font-family:Comic Sans MS,cursive;\"><img alt=\"\" src=\"http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg\" /></span></p>\r\n"], ["created_at", "2018-04-11 19:15:15.272077"], ["updated_at", "2018-04-11 19:15:15.272077"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/14
+Completed 302 Found in 39ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:15 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (59.4ms)
+  Rendered posts/show.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 222ms (Views: 197.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:20 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (8.0ms)
+  Rendered posts/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 97ms (Views: 92.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:22 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (3.9ms)
+  Rendered posts/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 85ms (Views: 79.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 12:15:27 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 116ms (Views: 112.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/14/edit" for 127.0.0.1 at 2018-04-11 12:15:30 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (5.4ms)
+  Rendered posts/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 76ms (Views: 70.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:41 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nkdBuFyxiVjFC8DU/w5Z400ZkBI0izrr68LZI5qwPv+myvfNroZh+Anm/WE5cPG3d0jyOOgezn435M7UkfuN8g==", "post"=>{"title"=>"sweet new pics", "body"=>"<p>hell yeah styling and picks&nbsp;</p>\r\n\r\n<h1><span style=\"font-family:Lucida Sans Unicode,Lucida Grande,sans-serif;\">I LOVE LUCIDA UNICODE</span></h1>\r\n\r\n<p><span style=\"font-family:Comic Sans MS,cursive;\"><img alt=\"\" src=\"http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg\" /></span></p>\r\n"}, "commit"=>"Publish", "id"=>"14"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["body", "<p>hell yeah styling and picks&nbsp;</p>\r\n\r\n<h1><span style=\"font-family:Lucida Sans Unicode,Lucida Grande,sans-serif;\">I LOVE LUCIDA UNICODE</span></h1>\r\n\r\n<p><span style=\"font-family:Comic Sans MS,cursive;\"><img alt=\"\" src=\"http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg\" /></span></p>\r\n"], ["updated_at", "2018-04-11 19:15:41.967671"], ["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/14
+Completed 302 Found in 7ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:41 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (2.0ms)
+  Rendered posts/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 12:15:48 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/14/edit" for 127.0.0.1 at 2018-04-11 12:15:50 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.8ms)
+  Rendered posts/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:56 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eJ91drA3nZSXHokEtVaboQp49jaHG4jci6OgDqUPHE9AEsMDQgB1NFvztLFzKDP1MCmUHFuOfElXhbf5rkSvQg==", "post"=>{"title"=>"sweet new pics", "body"=>"<p>hell yeah styling and picks&nbsp;</p>\r\n\r\n<h1><span style=\"font-family:Courier New,Courier,monospace;\">I LOVE LUCIDA UNICODE</span></h1>\r\n\r\n<p><span style=\"font-family:Comic Sans MS,cursive;\"><img alt=\"\" src=\"http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg\" /></span></p>\r\n"}, "commit"=>"Publish", "id"=>"14"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["body", "<p>hell yeah styling and picks&nbsp;</p>\r\n\r\n<h1><span style=\"font-family:Courier New,Courier,monospace;\">I LOVE LUCIDA UNICODE</span></h1>\r\n\r\n<p><span style=\"font-family:Comic Sans MS,cursive;\"><img alt=\"\" src=\"http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg\" /></span></p>\r\n"], ["updated_at", "2018-04-11 19:15:56.601262"], ["id", 14]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/14
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:56 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.1ms)
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at 2018-04-11 12:15:58 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.3ms)
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-04-11 12:16:18 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-04-11 12:16:19 -0700
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-02 12:24:17 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (3.6ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (0.5ms)
+  Rendered posts/_post.html.erb (4.4ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.3ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (1.5ms)
+  Rendered pages/welcome.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 1916ms (Views: 1884.8ms | ActiveRecord: 1.2ms)
+
+
